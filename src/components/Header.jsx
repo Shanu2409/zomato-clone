@@ -1,6 +1,7 @@
 import React from "react";
 import bgImg from "../assets/banner-img.png";
 import "../App.css";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Header = () => {
   return (
@@ -43,7 +44,9 @@ const Header = () => {
         <div className="flex bg-white rounded-full shadow-md w-3/4 md:w-1/2">
           {/* Location */}
           <div className="flex items-center px-4 border-r">
-            <span className="text-gray-400 material-icons">place</span>
+            <span className="text-gray-400 material-icons">
+              <FaLocationDot color="red" />
+            </span>
             <select className="outline-none ml-2 text-gray-700">
               <option>Mumbai</option>
             </select>
